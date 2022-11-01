@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(130, 121, 248);
+    background: rgb(236, 235, 235);
+}
+
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+
+button{
+    color: white;
+    background: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+span{
+    color: white;
+    padding-right: 5px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar{
+    background: rgb(108, 99, 247);
+    position: sticky; top: 0;
+    
+}
+
+.logo{
+    width:150px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li {
+    display: flex;
+    margin-left: 10px;
+}
+.navbar a:hover {
+    color: black;
+}
+
+.header {
+    background-color: rgb(127, 127, 241);
+    color: white;
+    min-height: 400px;
+}
+.header img{
+    max-width: 500px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.playlist{
+    background: rgb(22, 21, 21);
+    height: .8in;
+    flex-wrap: wrap;
+    
+}
+
+.playlist .playdes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 25px;
+    
+}
+
+
+.section{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(22, 21, 21);
+}
+.card2{
+    background: rgb(248, 203, 203);
+    width: 210px;
+    margin: 5px;
+    border-radius: 15px;
+    
+}
+.image-card{
+    background-color: gray;
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+}
+.card2 h1{
+    padding: 10px;
+ }
+.card2 p{
+   padding: 10px;
+}
+.card2 a{
+    background-color: blue;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 40px;
+ }
+ .card2:hover{
+    background: rgb(130, 121, 248);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+ }
+
+.car{
+    background-image:url("/img/Screenshot_20200623-011927.png")
+}
+.car1{
+    background-image:url("/img/Screenshot_20200620-112438.png")
+}
+.car2{
+    background-image:url("/img/Screenshot_20200720-061134.png")
+}
+.car3{
+    background-image:url("/img/Screenshot_20200813-084022.png")
+}
+.car4{
+    background-image:url("/img/Screenshot_20210108-092715.png")
+}
+
+
+.stream{
+    
+}
+.services{
+    max-width: 1100px;
+    padding: 0 45px; 
+    margin: 0 auto;  
+}
+.services h1{
+     text-align: center;
+     position: relative;
+     margin-bottom: 60px;
+     padding-bottom: 10px;
+}
+.services h1::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    padding: 50px 25px;
+    width: calc(26% - 20px);
+    border-radius: 6px;
+    background: rgb(0, 0, 0);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+.card:hover{
+    background: rgb(130, 121, 248);
+}
+.card:hover .box{
+    transform: scale(1.05);
+}
+.box{
+   transition: all 0.3s ease; 
+}
+.box i{
+    color: rgb(34, 4, 207); 
+    font-size: 50px;
+    transition: all 0.3s ease; 
+ }
+ .card:hover .box i{
+    color: white;
+}
+.box h3{
+    color: blue;
+ }
+ .box p{
+    color: white;
+ }
+
+
+ .music .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.music h2, h3{
+    line-height: 2;
+}
+.container p{
+    line-height: 2;
+}
+.music p{
+    line-height: 2;
+}
+.music .musictext{
+    margin-right: 150px;
+}
+
+
+.footer{
+    background: rgb(0, 0, 0);
+    
+}
+.footer .container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 0px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 70px, 0px;
+}
+.footer-col h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    position: relative;
+    color: rgb(130, 121, 248);
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: rgb(224, 222, 222);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease; 
+}
+
+.footer-col ul li a:hover{
+    color: rgb(130, 121, 248);
+}
+
+.footer-col .social_links a{
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    background-color: #767677;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+/* media queries*/
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .music .container {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .max-width{
+        padding: 0 25px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    .card{
+        width: 100%
+    }
+}
